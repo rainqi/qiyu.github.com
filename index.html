@@ -1,34 +1,42 @@
----
-layout: null
-permalink: /resume.html
----
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{ site.data.resume.title }}</title>
+    <title>Résumé</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/resume.css">
+    <link rel="stylesheet" href="css/resume.css">
   </head>
   <body>
     <div class="container">
       <header>
         <div id="name-wrapper">
           <div id="fullname">
-            {{ site.data.resume.name }}
+            YOUR NAME
           </div>
           <div id="jobtitle">
-            {{ site.data.resume.jobtitle }}
+            Your Job Title
           </div>
         </div>
         <div id="contact">
-          {% for item in site.data.resume.contact %}
+          
           <div class="contact-item">
-            <i class="fa {{ item.icon }} aria-hidden="true></i> {{ item.text }}
+            <i class="fa fa-envelope aria-hidden="true></i> youremail@example.com
           </div>
-          {% endfor %}
+          
+          <div class="contact-item">
+            <i class="fa fa-phone-square aria-hidden="true></i> your-phone-num
+          </div>
+          
+          <div class="contact-item">
+            <i class="fa fa-globe aria-hidden="true></i> your-website.com
+          </div>
+          
+          <div class="contact-item">
+            <i class="fa fa-github aria-hidden="true></i> your-github
+          </div>
+          
         </div>
       </header>
       
@@ -37,19 +45,31 @@ permalink: /resume.html
           Education
         </div>
         <div class="section-content">
-          {% for edu in site.data.resume.education %}
+          
           <div class="block">
             <div class="block-title">
-              {{ edu.university }}
+              Your First University
             </div>
             <div class="block-subtitle">
-              {{ edu.duration }} | {{ edu.location }}
+              Jul 2011 - Dec 2012 | Consectetur adipiscing elit
             </div>
             <div class="block-content">
-              {{ edu.major }}
+              Lorem ipsum dolor sit amet
             </div>
           </div>
-          {% endfor %}
+          
+          <div class="block">
+            <div class="block-title">
+              Your Second University
+            </div>
+            <div class="block-subtitle">
+              Aug 2007 - Jun 2011 | Ut enim ad minim veniam
+            </div>
+            <div class="block-content">
+              Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+            </div>
+          </div>
+          
         </div>
       </section>
 
@@ -58,16 +78,34 @@ permalink: /resume.html
           Skills
         </div>
         <div class="section-content">
-          {% for skill in site.data.resume.skills %}
+          
           <div class="block">
             <div class="block-title">
-              {{ skill.title }}
+              Skill Group 1
             </div>
             <div class="block-content">
-              {{ skill.items }}
+              Lorem, Ipsum, Dolor, Sit, Amet
             </div>
           </div>
-          {% endfor %}
+          
+          <div class="block">
+            <div class="block-title">
+              Skill Group 2
+            </div>
+            <div class="block-content">
+              Consectetur, Adipiscing, Elit
+            </div>
+          </div>
+          
+          <div class="block">
+            <div class="block-title">
+              Skill Group 3
+            </div>
+            <div class="block-content">
+              Sed do, Eiusmod, Tempor, Incididunt
+            </div>
+          </div>
+          
         </div>
       </section>
 
@@ -76,19 +114,43 @@ permalink: /resume.html
           Experience
         </div>
         <div class="section-content">
-          {% for exp in site.data.resume.experience %}
+          
           <div class="block">
             <div class="block-title">
-              {{ exp.title }}
+              Job Title 1
             </div>
             <div class="block-subtitle">
-              {{ exp.duration }} | {{ exp.company }}
+              Apr 2016 - Now | Your 1st, Inc.
             </div>
             <div class="block-content">
-              {{ exp.description }}
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </div>
           </div>
-          {% endfor %}
+          
+          <div class="block">
+            <div class="block-title">
+              Job Title 2
+            </div>
+            <div class="block-subtitle">
+              Apr 2013 - Mar 2016 | Your 2nd, Inc.
+            </div>
+            <div class="block-content">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+          </div>
+          
+          <div class="block">
+            <div class="block-title">
+              Job Title 3
+            </div>
+            <div class="block-subtitle">
+              Dec 2011 - Mar 2012 | Your 3rd Co, Ltd.
+            </div>
+            <div class="block-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </div>
+          
         </div>
       </section>
 
@@ -97,19 +159,31 @@ permalink: /resume.html
           Projects
         </div>
         <div class="section-content">
-          {% for project in site.data.resume.projects %}
+          
           <div class="block">
             <div class="block-title">
-              {{ project.name }}
+              Project Name 1
             </div>
             <div class="block-subtitle">
-              {{ project.contribution }}
+              Contributor.
             </div>
             <div class="block-content">
-              {{ project.description }}
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </div>
           </div>
-          {% endfor %}
+          
+          <div class="block">
+            <div class="block-title">
+              Project Name 2
+            </div>
+            <div class="block-subtitle">
+              Creator and maintainer.
+            </div>
+            <div class="block-content">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+          </div>
+          
         </div>
       </section>
 
@@ -118,16 +192,25 @@ permalink: /resume.html
           Languages
         </div>
         <div class="section-content section-flex">
-          {% for language in site.data.resume.languages %}
+          
           <div class="block block-square">
             <div class="block-title">
-              {{ language.name }}
+              English
             </div>
             <div class="block-content">
-              {{ language.proficiency }}
+              Work proficiency
             </div>
           </div>
-          {% endfor %}
+          
+          <div class="block block-square">
+            <div class="block-title">
+              Mandarin Chinese
+            </div>
+            <div class="block-content">
+              Native
+            </div>
+          </div>
+          
         </div>
       </section>
 
